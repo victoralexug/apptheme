@@ -1,0 +1,458 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Arial', sans-serif;
+	line-height:1.6em;
+	font-size:17px;
+}
+
+#main-header{
+    padding-top: 25px;
+    display: flex;
+}
+
+#main-header h1{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: -100;
+    margin-left: 108px;
+    width: 55vw;
+}
+
+#app{
+    color:#56a79a;
+}
+
+#nav-bar {
+    display: flex;
+    width: 45vw;
+    padding-bottom: 20px;
+}
+
+#nav-bar li{
+    list-style: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    padding: 0 25px;
+}
+
+.navlink{
+    text-decoration: none;
+    color: rgb(124, 124, 124);
+}
+
+.navlink:hover{
+    color:#56a79a;
+    border-bottom: 3px solid #56a79a;
+    padding-bottom:3px;
+}
+
+.current-page a {
+    color: rgb(9, 150, 126);
+    border-bottom: 3px solid #56a79a;
+    padding-bottom:3px;
+}
+
+/* media querry for each screen size */
+@media (max-width: 1200px) {
+    #main-header h1{
+        margin-left: 5%;
+        width: 45vw;
+        justify-content: center;
+    }
+    #nav-bar {
+        margin: auto;
+        width: 45vw;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 780px) {
+    #main-header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #main-header h1{
+        padding-bottom: 30px;
+        margin: auto;
+        width: 95vw;
+    }
+    #nav-bar {
+        display: flex;
+        margin: auto;
+        width: 95vw;
+        justify-content: center;
+    }
+    #nav-bar li{
+        padding: 0 25px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    #nav-bar li{
+        padding: 0 10px;
+        margin: auto;
+    }
+}
+
+
+#welcome{
+    background-image: url('images/well.jpg');
+    height: 500px;
+    text-align: center;
+    padding-top: 150px;
+    border-bottom:1.5px solid #56a79a;
+}
+
+#showcase{
+    background-color: #777;
+    border-radius:90px;
+    width: 50vw;
+    padding: 20px;
+    opacity: 0.9;
+    margin: auto;
+}
+
+#showcase h1{
+    font-size: 50px;
+    padding:  30px 0px 60px 0px;
+}
+
+#apptheme {
+    color: #56a79a;
+}
+
+#showcase p{
+    font-size:20px;
+	color:#222;
+}
+
+@media (max-width: 1200px) {
+    #showcase{
+        width: 80vw;
+        padding: 20px;
+    }
+}
+@media (max-width: 780px) {
+    #showcase h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    #showcase h1{
+        font-size: 20px;
+    }
+    #showcase p{
+        font-size: 15px;
+    }
+}
+
+#features{
+    text-align: center;
+    width: 85vw; 
+    margin-left: 100px;
+}
+#features h2{
+    font-size: 35px;
+    padding: 15px;
+}
+
+
+#top-features {
+    display: flex;
+    padding: 10px;
+}
+
+#lower-features {
+    display: flex;
+    padding: 10px;
+}
+
+.feature{
+    width: 500px;
+}
+
+#features p{
+    color: #777;
+}
+.feature p{
+    color: #777;
+    padding: 15px;
+}
+
+#features i{
+	color:#56a79a; 
+	font-size:60px;
+    padding: 20px;
+}
+
+@media (max-width: 760px) {
+    #features{
+        width: 95vw; 
+        margin: auto;
+    }
+    #top-features {
+        display: grid;
+        padding: 1px;
+    }
+    #lower-features {
+        display: grid;
+        padding: 1px;
+    }
+    
+    .feature{
+        width: 100%;
+    }
+}
+
+#more-features {
+    display: flex;
+    background:brown;
+	color:#fff;
+    text-align: center;
+    justify-content: center;
+}
+
+#more-features-img{
+    margin: auto;
+}
+
+#core-features {
+    margin: auto;
+}
+
+#core-features h2{
+	font-size:35px;
+	padding-bottom:10px;
+}
+
+#core-features ul{
+    list-style: none;
+    line-height: 2.2em;
+    font-size: 20px;
+}
+
+@media (max-width: 760px) {
+    #more-features {
+        display: grid;
+    }
+    #more-features-img img{
+        margin: 0;
+        width: 96.5vw;
+    }
+}
+
+#footer {
+    background-color: #444;
+    color: #fff;
+    display: flex;
+    padding: 10px;
+    margin: auto;
+}
+
+.contactUs {
+    padding: 35px 35px 35px 90px;
+    width: 32vw;
+}
+
+.contactUs h4{
+    padding-bottom: 15px;
+}
+
+.contactUs li{
+    list-style: none;
+    line-height: 2em;
+    color: #fff;
+}
+
+
+.aboutUs {
+    padding: 35px;
+    width: 32vw;
+}
+
+.aboutUs h4{
+    padding-bottom: 20px;
+}
+
+.newsLetter {
+    width: 25vw;
+    padding-top: 35px;
+}
+
+.newsLetter h4{
+    padding-bottom: 20px;
+}
+
+#form{
+    padding-top: 15px;
+}
+
+#email {
+	padding: 7px;
+}
+
+#submit{
+	background-color:#222;
+	color:#fff;
+	padding:10px;
+	border:0;
+}
+
+@media (max-width: 600px) {
+    #footer {
+        display: grid;
+        padding: 15px 0;
+    }
+    .contactUs {
+        padding: 10px 0;
+        width: 90vw;
+    }
+    .aboutUs {
+        padding: 25px 0;
+        width: 90vw;
+    }
+    .newsLetter {
+        width: 90vw;
+        padding-top: 10px;
+    }
+}
+
+#main-footer{
+    background-color:#56a79a;
+	color:#fff;
+    text-align:center;
+    height: 70px;
+}
+
+#footer-text{
+    padding: 20px;
+}
+
+.hr{
+    border-top: 1px solid #56a79a;
+}
+
+#sub-header {
+    width: 83vw;
+    margin: auto;
+    padding-top: 20px;
+}
+
+#main-page{
+    width: 83vw;
+    margin: auto;
+    text-align: center;
+}
+
+.colored{
+    color:#56a79a;
+}
+
+.about h2{
+    padding: 38px 0 20px 0;
+}
+.about p{
+    padding-bottom: 17px;
+}
+
+@media (max-width: 1200px) {
+    #sub-header{
+        margin-left: 5%;
+    }
+    #main-page{
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 780px) {
+    #sub-header{
+        width: 95vw;
+        margin: 0px;
+    }
+    #main-page{
+        width: 95vw;
+        margin: 0px;
+    }
+}
+@media (max-width: 425px) {
+    #main-page{
+        width: 100vw;
+        margin: 0px;
+    }
+}
+
+.services h2{
+    padding: 38px 0 0px 0;
+}
+.services {
+    display: grid;
+    grid-gap: 15px;
+    padding-bottom: 15px;
+}
+
+.services h4 {
+    padding: 20px 20px 0px 20px;
+}
+
+.services p {
+    padding: 25px;
+}
+
+.even{
+	background-color:#333;
+	color:#fff;
+}
+
+.odd {
+	background-color:#56a79a;
+	color:#fff;
+    padding-bottom: 10px;
+}
+
+.contact h2{
+    padding: 38px 0 0px 0;
+}
+
+.contact p {
+    padding: 20px
+}
+
+#main-form{
+    background-color:#000;
+	color:#fff;
+	padding:20px;
+}
+
+#main-form input[type="text"]{
+	width:50%;
+	height:80px;
+	padding-bottom:10px;
+}
+
+#main-form textarea{
+	width:50%;
+	padding:10px;
+}
+
+button{
+	width:50%;
+	padding:10px 0px;
+	border:0;
+	background-color:#222;
+	color:#fff;
+}
+
+#main-form label{
+	text-transform:uppercase;
+}
