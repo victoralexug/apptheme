@@ -81,7 +81,6 @@
                 <input id='email' type='email' name='email' placeholder='Enter Email' format='victoralex34@gmail.com'required>
                 <input type="submit" id="submit" value="submit">
             </form>
-          <P id='successful' syle='color: green;'>Success</p>
         </div>
     </section>
     <footer id="main-footer">
@@ -95,9 +94,7 @@
       setTimeout(fade_out, 3000);
 
 function fade_out() {
-  $("#success").fadeOut().empty();
-	
-  $("#successful").fadeOut().empty();
+  $("#success").fadeOut();
 }
       </script>
 </body>
