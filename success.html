@@ -54,7 +54,7 @@
                 <textarea name="message" value='' required></textarea>
             </div><br>	
             <button type="submit" name="button">Submit</button>
-              <P syle='color: light-green;'>Your form has been submitted successfully</p>
+              <P class='success' syle='color: light green;'>Your form has been submitted</p>
         </form>
     </section>
     
@@ -81,7 +81,7 @@
                 <input id='email' type='email' name='email' placeholder='Enter Email' format='victoralex34@gmail.com'required>
                 <input type="submit" id="submit" value="submit">
             </form>
-          <P class='success' syle='color: light-green;'>Your form has been submitted successfully</p>
+          <P id='successful' syle='color: green;'>Success</p>
         </div>
     </section>
     <footer id="main-footer">
@@ -91,12 +91,13 @@
     </footer>
       
       <script>
-        const success = document.querySelectorAll(".success");
         
-      success.setTimeout(fade_out, 2000);
+      setTimeout(fade_out, 3000);
 
 function fade_out() {
-  $(".success").fadeOut().empty();
+  $("#success").fadeOut().empty();
+	
+  $("#successful").fadeOut().empty();
 }
       </script>
 </body>
